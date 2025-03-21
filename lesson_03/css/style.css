@@ -1,0 +1,66 @@
+@import url("reset.css");
+
+* {
+    color: #613203;
+}
+
+#title {
+    display: inline;
+    background-image: linear-gradient(90deg, #3482ff, #fcfc32);
+    background-clip: text;
+    color: transparent;
+}
+
+[href*="youtube"] {
+    color: #074f86;
+}
+
+.general-info {
+    color: #130a6f;
+}
+
+.general-info p {
+    color: #22a2ec;
+}
+
+.general-info.block-info {
+    color: #077389;
+}
+
+.general-info.block-info+div {
+    color: #079c7c;
+}
+
+.block-info * {
+    color: #7b1dda;
+}
+
+.first-list>li {
+    color: red;
+}
+
+.first-list>li~li {
+    color: green;
+}
+
+.first-list li ul li {
+    color: blue;
+
+}
+
+.first-list li ul li~li {
+    color: orange;
+}
+
+.first-list li ul li ol li {
+    color: #4597f7;
+}
+
+.first-list li ul li ol li~li,
+.first-list li ul li ol li span {
+    color: #5d5d5d;
+}
+
+.first-list li ul li span {
+    color: #a0f0fc;
+}
