@@ -117,10 +117,6 @@ body {
     margin: 0 auto;
 }
 
-.block-professionals a {
-    display: inline-block;
-}
-
 .professionals-card {
     display: inline-block;
     vertical-align: middle;
@@ -176,21 +172,10 @@ body {
     width: 100%;
 
 }
-
-/* 
-.professionals-card-title a:hover {
-    text-decoration: underline;
-} */
-
 .professionals-card img {
     height: 266px;
     position: relative;
     /* width: 100%; */
-}
-
-.albert-img {
-    position: relative;
-    height: 266px;
 }
 
 .prof-img-wrapper {
