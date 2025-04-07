@@ -1,0 +1,571 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('fonts.css');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    background: url(../img/seamless-pattern-violet.webp) 0 0;
+}
+
+.main-title {
+    font-size: 42px;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+}
+
+.header,
+.footer {
+    padding: 25px;
+    /* padding-top: 25px;
+    padding-bottom: 25px; */
+}
+
+[class*="-container"] {
+    max-inline-size: 1230px;
+    /*1200px + (15px + 15px)*/
+    padding-inline: 15px;
+    margin-inline: auto;
+}
+
+.header-container {
+    background-color: #fff;
+    border-radius: 10px;
+
+}
+
+.header-logo {
+    margin-right: 124px;
+    vertical-align: middle;
+}
+
+.header-body {
+    display: inline-block;
+}
+
+.header-menu-list {
+    font-size: 0;
+}
+
+.header-menu-item {
+    color: #272D4E;
+
+    vertical-align: middle;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.16;
+    /*21 / 18*/
+    display: inline-block;
+}
+
+.header-menu-item:not(:last-child) {
+    margin-right: 34px;
+}
+
+/* ================================================================================================================ */
+.header-menu-list {
+    padding: 20px 30px;
+}
+
+.header-menu-item:not(:last-child) {
+    padding-bottom: 5px;
+}
+
+.header-menu-item:hover {
+    color: #5D6491;
+    font-weight: 800;
+}
+
+.business-section {
+    font-family: 'Inter', sans-serif;
+    background-color: #412672;
+    padding-top: 61px;
+    padding-bottom: 102px;
+}
+
+/* .block-professionals {
+    margin: 0 auto;
+} */
+
+.business-title {
+    color: #FFF;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 1.21;
+    /*46 / 38*/
+    margin-bottom: 31px;
+}
+
+.business-title strong {
+    font-weight: 700;
+}
+
+/* =================Professional-cards============================================================================================== */
+.bussiness-container {
+    padding: 0;
+}
+
+.block-professionals {
+    font-size: 0;
+    margin: 0 auto;
+}
+
+.professionals-card {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 15px;
+    background-color: #fff;
+    max-width: 387px;
+    width: 100%;
+    min-height: 476px;
+    padding: 20px;
+
+    transition: 0.3s;
+
+}
+
+.professionals-card *:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.professionals-card:not(:last-child) {
+    margin-right: 20px;
+}
+
+.professionals-card:hover {
+    background-color: #FFBE48;
+    box-shadow: 0px 384px 108px 0px rgba(0, 0, 0, 0.00), 0px 246px 98px 0px rgba(0, 0, 0, 0.01), 0px 138px 83px 0px rgba(0, 0, 0, 0.05), 0px 62px 62px 0px rgba(0, 0, 0, 0.09), 0px 15px 34px 0px rgba(0, 0, 0, 0.10);
+}
+
+.professionals-card-title {
+    color: #000;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.22;
+    /*27 / 22*/
+}
+
+.professionals-card img {
+    height: 266px;
+    /* width: 100%; */
+}
+
+.professionals-card-link {
+    position: relative;
+
+}
+
+.professionals-card-link::after {
+    content: "";
+    position: absolute;
+    background: #FE3F3F;
+    width: 0;
+    height: 2px;
+    bottom: 0px;
+    left: 0;
+
+    transition: 0.3s;
+}
+
+.professionals-card-link:hover::after {
+    width: 100%;
+}
+
+.professionals-card p {
+    color: #4F4F4F;
+    line-height: 1.26;
+}
+
+.professionals-card-link {
+    color: #FE3F3F;
+    line-height: 1.26;
+}
+
+/* =============Best faculty in California================== */
+.faculty-section {
+    background-color: #fff;
+}
+
+.best-faculty-titel {
+    color: #412672;
+    font-size: 34px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.block-best-faculty {
+    font-size: 0;
+    /* margin: 0 -30px; */
+    padding-top: 55px;
+    padding-bottom: 72px;
+}
+
+/* .block-best-faculty img {
+    vertical-align: middle;
+    max-width: 764px;
+} */
+
+.best-faculty-body {
+    /* vertical-align: middle; */
+    padding-top: 98px;
+    display: inline-block;
+    max-width: 518px;
+    width: 100%;
+    font-size: 22px;
+    margin-right: 20px;
+}
+
+.best-faculty-body p {
+    line-height: 1.22;
+    margin-bottom: 20px;
+}
+
+.block-best-faculty {
+    padding: 30px;
+}
+
+.best-faculty-titel strong {
+    font-weight: 700;
+}
+
+.block-best-faculty ul li {
+    font-size: 20px;
+}
+
+.block-best-faculty ul li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.block-best-faculty ul li::before {
+    content: "";
+    background: url(../img/check-icon-red.svg) 0 0 no-repeat;
+    width: 29px;
+    height: 29px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+
+
+/* ===============Training========================================================================== */
+.training-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #efc3f7;
+}
+
+.training-container {
+    max-width: 1200px;
+    padding: 20px;
+    height: 100%;
+    background-color: #efd3ff;
+    border: 2px solid #a108d8;
+}
+
+.training-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #9f006a;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.training-subtitle {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #de2fd2;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.buttons {
+    margin-bottom: 40px;
+}
+
+.button {
+    background-color: transparent;
+    padding: 20px 30px;
+    border: 2px solid #51f61f;
+    border-radius: 20px;
+    color: #0a2407;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.button:hover {
+    background-color: #51f61f;
+    color: #fff;
+}
+
+.button:active {
+    background-color: #58b710;
+    border: #58b710;
+}
+
+.button:focus-visible {
+    border: transparent;
+    background-color: #7fb710;
+    outline: 1px #7fb710 solid;
+}
+
+.link {
+    color: #0a2407;
+    font-size: 20px;
+
+}
+
+.link:not(:last-child) {
+    margin-right: 20px;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: #51f61f;
+}
+
+.link:focus {
+    font-weight: 800;
+    color: #24690f;
+}
+
+.link:visited {
+    color: #149644;
+}
+
+/* ========================================nth-child================================================================================== */
+.nth-container {
+    width: 800px;
+    height: 100%;
+    border: 1px solid green;
+    font-size: 0;
+}
+
+.nth-container:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.nth-container div {
+    display: inline-block;
+    border: 1px #3a1eed solid;
+    width: 20%;
+    height: 100px;
+}
+
+.nth-odd div:nth-child(odd) {
+    background-color: #ee04c0;
+}
+
+.nth-even div:nth-child(even) {
+    background-color: #b53595;
+}
+
+.nth-first div:first-child {
+    background-color: #8e41f9;
+}
+
+.nth-last div:last-child {
+    background-color: #552df5;
+}
+
+.nth-every-third div:nth-child(2n+3) {
+    background-color: #2a78fe;
+}
+
+.nth-container.first-of-type {
+    font-size: 20px;
+}
+
+.first-of-type p:first-of-type {
+    color: #2a78fe;
+}
+
+.first-of-type p:first-child {
+    color: #2a78fe;
+}
+
+.pseudoelements {
+    margin-bottom: 20px;
+}
+
+.pseudoelements ul li {
+    font-size: 24px;
+    color: #af9305;
+}
+
+.pseudoelements ul li::before {
+    content: "";
+    background: url(../img/star-icon.png) 0 0 / 30px;
+    width: 30px;
+    height: 30px;
+    vertical-align: top;
+}
+
+.pseudoelements-after ul li {
+    font-size: 24px;
+    color: #0a2407;
+}
+
+.pseudoelements-after ul li>a:hover {
+    text-decoration: underline;
+}
+
+.pseudoelements-after ul li>a::after {
+    content: "";
+    background: url(../img/arrow_icon.png) 0 0 / 30px;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+/* ========================================Game "Till the end"========================================================================= */
+.game-title {
+    color: #faf73e;
+    font-size: 48px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.field {
+    margin-inline: auto;
+    width: 1000px;
+    background-color: #77ef99;
+    height: 1000px;
+}
+
+[class*="field-item-"]:not(.field-item-00) {
+    visibility: hidden;
+    position: relative;
+    background: #56f009;
+    text-align: center;
+}
+
+.field-item-00 {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    margin-left: 100px;
+    background-color: #f87307;
+}
+
+.field-item-01 {
+    width: 150px;
+    height: 40px;
+    margin-left: 150px;
+    margin-top: -40px;
+    background-color: #51f61f;
+
+}
+
+.field-item-02 {
+    width: 35px;
+    height: 100px;
+    margin-left: 300px;
+    margin-top: -40px;
+    background-color: #0d8bf3;
+}
+
+.field-item-03 {
+    width: 400px;
+    height: 20px;
+    margin-left: 335px;
+    margin-top: -19px;
+    background-color: #ec14f0;
+}
+
+.field-item-04 {
+    width: 20px;
+    height: 75px;
+    margin-left: 735px;
+    margin-top: -20px;
+    background-color: #600bd7;
+}
+
+.field-item-05 {
+    width: 300px;
+    height: 20px;
+    margin-left: 436px;
+    margin-top: -20px;
+    background-color: #ab33e3;
+}
+
+.field-item-06 {
+    width: 20px;
+    height: 150px;
+    margin-left: 430px;
+    margin-top: -20px;
+    background-color: #3a1eed;
+}
+
+.field-item-07 {
+    width: 380px;
+    height: 20px;
+    margin-left: 70px;
+    margin-top: -10px;
+    background-color: #ed109c;
+}
+
+.field-item-08 {
+    width: 20px;
+    height: 200px;
+    margin-left: 50px;
+    margin-top: -20px;
+    background-color: #e46faf;
+}
+
+.field-item-09 {
+    width: 450px;
+    height: 18px;
+    margin-left: 70px;
+    margin-top: -20px;
+    background-color: #865981;
+}
+
+.field-item-10 {
+    width: 20px;
+    height: 80px;
+    margin-left: 500px;
+    margin-top: -98px;
+    background-color: #c972e0;
+}
+
+.field-item-11 {
+    width: 20px;
+    height: 100px;
+    margin-left: 500px;
+    margin-top: -100px;
+    background-color: #f46fef;
+}
+
+.field-item-12 {
+    width: 150px;
+    height: 20px;
+    margin-left: 500px;
+    margin-top: -100px;
+    background-color: #e794c3;
+}
+
+.field-item-13 {
+    width: 241.5px;
+    height: 313px;
+    background-color: #fff;
+    margin-left: 550px;
+    background: url(../img/cat-img.png) 0 0 / cover no-repeat;
+}
+
+.field>*:hover+*,
+.field>*:hover {
+    visibility: visible;
+}
+
+.field-item-13:hover {
+    background: url(../img/cat-img.png) 0 0 / cover no-repeat;
+}
