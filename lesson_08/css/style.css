@@ -1,0 +1,67 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('fonts.css');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    background-image: linear-gradient(to right, #cdf27c, #b0f598, #99f6b4, #8cf4cd, #8bf1e0, #85f2e1, #7ff3e2, #78f4e3, #6bf9ce, #74fcb0, #8dfd8b, #affb5f);
+}
+
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+}
+
+.header,
+.footer {
+    padding: 25px;
+    /* padding-top: 25px;
+    padding-bottom: 25px; */
+}
+
+[class*="-container"] {
+    max-inline-size: 1230px;
+    /*1200px + (15px + 15px)*/
+    padding-inline: 15px;
+    margin-inline: auto;
+}
+
+.header-container {
+    background-image: linear-gradient(to left, #affb5f, #8dfd8b, #74fcb0, #6bf9ce, #78f4e3, #7ff3e2, #85f2e1, #8bf1e0, #8cf4cd, #99f6b4, #b0f598, #cdf27c);
+    background-image: linear-gradient(to right, #affb5f, #b8f966, #c0f66d, #c7f475, #cdf27c);
+    border-radius: 10px;
+    background: rgba(18, 11, 11, 0.51);
+
+
+}
+
+.main-title {
+    font-size: 42px;
+    margin-bottom: 30px;
+    color: #d0b800;
+}
+
+.logo-wrapper {
+    max-width: 357px;
+    display: inline-block;
+}
+
+.image-container p {
+    display: inline-block;
+    font-size: 20px;
+    color: #272a00;
+}
+
+.image-with-border {
+    max-width: 557px;
+    /* border-radius: 150px 0px; */
+    border-radius: 26.92% 0% 26.92% 0% / 26.92% 0% 26.92% 0%;
+    /* border-radius: 26.93% 0% 26.93% 0%; */
+}
+
+.bali {
+    border-radius: 1.47%;
+}
