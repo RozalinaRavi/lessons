@@ -1,0 +1,420 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('fonts.css');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+}
+
+.header,
+.footer {
+    padding: 25px;
+}
+
+[class*="__container"] {
+    max-inline-size: 1230px;
+    /*1200px + (15px + 15px)*/
+    padding-inline: 15px;
+    margin-inline: auto;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+.menu {
+    background-color: #ddff7e;
+    margin-bottom: 60px;
+}
+
+.menu__item {
+    display: inline-block;
+    position: relative;
+}
+
+.menu__item:hover .menu__link {
+    background-color: #05ed0d;
+}
+
+.menu__item:hover .menu__sub-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu__item:not(:last-child) {
+    margin-right: 5px;
+}
+
+.menu__link {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px;
+
+    transition: 0.3s;
+}
+
+.menu__sub-menu {
+    position: absolute;
+    left: 0;
+    top: 100%;
+
+    transition: 0.3s;
+}
+
+.sub-menu {
+    padding-top: 10px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sub-menu__item {
+    background-color: #e8f83c;
+}
+
+.sub-menu__item:first-child {
+    padding-top: 10px;
+}
+
+.sub-menu__item:last-child {
+    padding-bottom: 10px;
+}
+
+.sub-menu__item:hover .sub-menu__link {
+
+    background-color: #05ed0d;
+}
+
+.sub-menu__link {
+    width: 100%;
+    padding: 5px 20px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------Block from Ecobazar------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+.products {
+    font-size: 0;
+}
+
+.product-card {
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #E6E6E6;
+    background: #FFF;
+    max-width: 312px;
+    padding: 5px 5px 16px 5px;
+
+    position: relative;
+}
+
+.product-card:hover {
+    border: 1px solid #2C742F;
+    box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
+}
+
+.product-card:hover .product-card__button-actions {
+    opacity: 1;
+    visibility: visible;
+}
+
+.product-card__img {
+    max-width: 302px;
+    width: 100%;
+}
+
+.product-card__title {
+    color: #4D4D4D;
+    font-size: 14px;
+    line-height: 1.5;
+
+    padding-left: 9px;
+}
+
+.product-card:hover .product-card__title {
+    color: #2C742F;
+}
+
+.product-card__price {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+
+    padding-left: 9px;
+}
+
+.product-card__button-actions {
+    background-color: #FFF;
+    border: 1px #F2F2F2 solid;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+
+    opacity: 0;
+    visibility: hidden;
+    /* position: relative; */
+}
+
+.product-card__button-actions--like {
+    top: 4.91%;
+    right: 6.41%;
+}
+
+.product-card__button-actions--view {
+    top: 16.21%;
+    right: 6.41%;
+}
+
+.product-card__button-actions--like:hover,
+.product-card__button-actions--view:hover {
+    background-color: #00B207;
+    border: #00B207;
+}
+
+.product-card__button-actions--like:hover svg path,
+.product-card__button-actions--view:hover svg path {
+    stroke: #FFF;
+}
+
+.product-card__button-actions--view svg {
+    position: absolute;
+    top: 24%;
+    left: 24%;
+}
+
+.product-card__button-actions svg {
+    position: absolute;
+    top: 24%;
+    left: 24%;
+}
+
+.product-card__button-actions--buy {
+    background-color: #F2F2F2;
+
+    bottom: 6.88%;
+    right: 5.13%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.product-card:hover .product-card__button-actions--buy {
+    background-color: #00B207;
+}
+
+.product-card:hover .product-card__button-actions--buy svg path {
+    stroke: #FFF;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------Block from Business------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* загальні стилі для секції */
+.section {
+    min-height: 600px;
+
+    background-color: #fff;
+}
+
+/* стилі для секції з декором */
+.section--figure {
+    position: relative;
+    background-color: #5a54f2;
+}
+
+/* декор зроблений псевдоелементами */
+.section--figure:before,
+.section--figure:after {
+    content: "";
+    position: absolute;
+    left: -5%;
+    width: 110%;
+    height: 55px;
+}
+
+.section--figure:before {
+    top: 0;
+
+    /* радіус згори */
+    border-radius: 0% 0% 50% 50%/0% 0% 100% 100%;
+    background-color: #fff;
+}
+
+.section--figure:after {
+    bottom: 0;
+
+    /* радіус знизу */
+    border-radius: 50% 50% 0% 0%/100% 100% 0% 0%;
+    background-color: #231f8b;
+}
+
+/* нижня секція */
+.section--dark {
+    background-color: #231f8b;
+}
+
+.features__container {
+    max-width: 1780px;
+    text-align: center;
+    font-size: 0;
+}
+
+.block-feature--margin-bottom {
+    margin-bottom: 55px;
+}
+
+.features__container::before {
+    content: '';
+    position: absolute;
+    background: url(../img/decor-dots.svg);
+    width: 213.76px;
+    height: 472.16px;
+
+    bottom: 298px;
+    left: 100px;
+}
+
+.block-feature__image {
+    display: inline-block;
+    margin-right: 70px;
+}
+
+.block-feature__image img {
+    position: relative;
+    z-index: 3;
+    max-width: 430px;
+    width: 100%;
+    border-radius: 4.65% / 3.65%;
+    box-shadow: -25px 20px 44px 0px rgba(84, 48, 209, 0.40);
+    box-shadow: none;
+}
+
+.block-feature__image::before {
+    content: "";
+    position: absolute;
+    top: 167px;
+    left: 95px;
+    background: url(../img/decor-small-circle.svg);
+    width: 65px;
+    height: 65px;
+}
+
+.block-feature__image::after {
+    content: "";
+    position: absolute;
+    top: 214px;
+    left: 92px;
+    background: url(../img/decor-big-circle.svg);
+    width: 401px;
+    height: 401px;
+    z-index: 2;
+}
+
+.block-feature__body {
+    max-width: 480px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    color: #FFF;
+}
+
+.block-feature__title {
+    font-family: "Circular Std";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.28;
+
+    margin-bottom: 13px;
+}
+
+.block-feature__descr {
+    margin-bottom: 39px;
+}
+
+.block-feature__descr p {
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 1.66;
+}
+
+.button {
+    border-radius: 60px;
+}
+
+.block-feature__button {
+    background-color: #F35B09;
+    padding: 22px 26px;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.block-feature--reverse {
+    text-align: end;
+    position: relative;
+
+
+}
+
+.block-feature--reverse .block-feature__body {
+    margin-right: 69px;
+}
+
+.block-feature--reverse .block-feature__image {
+    position: relative;
+}
+
+.block-feature--reverse .block-feature__image img {
+    z-index: 7;
+    box-shadow: none;
+}
+
+.block-feature--reverse .block-feature__image::before {
+    content: "";
+    position: absolute;
+    top: -8.76%;
+    left: 28.60%;
+    background: url(../img/decor-small-circle.svg);
+    width: 65px;
+    height: 65px;
+
+    z-index: 8;
+}
+
+.block-feature--reverse .block-feature__image::after {
+    content: "";
+    position: absolute;
+    top: -10.22%;
+    left: 45.72%;
+
+
+    background: url(../img/decor-big-circle.svg);
+    width: 401px;
+    height: 401px;
+    z-index: 5;
+}
+
+.block-feature--reverse::after {
+    content: "";
+    position: absolute;
+    background: url(../img/decor-dots-horizontal.svg);
+    width: 472.16px;
+    height: 213.76px;
+
+    bottom: 1px;
+    right: -33%;
+
+    bottom: 85px;
+    right: 30px;
+}
