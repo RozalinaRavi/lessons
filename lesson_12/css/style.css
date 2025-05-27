@@ -1,0 +1,402 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('fonts.css');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+
+    background-color: #39464b;
+}
+
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+}
+
+.header,
+.footer {
+    padding: 25px;
+}
+
+[class*="__container"] {
+    max-inline-size: 1230px;
+    /*1200px + (15px + 15px)*/
+    padding-inline: 15px;
+    margin-inline: auto;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 56px;
+    color: blanchedalmond;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* My car */
+
+.car-section {
+    background-color: #bafcea;
+    background: url(../img/city-background.avif) no-repeat center / cover;
+    height: 400px;
+    position: relative;
+}
+
+.road {
+    background-color: #818080;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.road::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    border: 1px white dashed;
+    z-index: 1;
+    top: 50%;
+    left: 0;
+}
+
+.car {
+    position: relative;
+    bottom: 60px;
+    left: 200px;
+    z-index: 2;
+}
+
+.car__middle {
+    width: 180px;
+    height: 140px;
+    background-color: #131953;
+    position: absolute;
+    bottom: 0;
+    left: 180px;
+    border-top-right-radius: 185px 94px;
+    border-top-left-radius: 185px 94px;
+}
+
+.car__door {
+    position: absolute;
+    height: 100px;
+    width: 50px;
+    bottom: 10px;
+    border: #0d150d 2px solid;
+    background-color: #131953;
+}
+
+.car__door--left {
+    border-top-left-radius: 90px 50px;
+    border-bottom-left-radius: 30px 50px;
+    border-bottom-right-radius: 20px 30px;
+    left: 30px;
+}
+
+.car__door--right {
+    border-top-right-radius: 90px 50px;
+    border-bottom-right-radius: 30px 50px;
+    border-bottom-left-radius: 30px 20px;
+    right: 30px;
+}
+
+.car__door--left::before {
+    content: "";
+    position: absolute;
+    height: 46px;
+    width: 46px;
+    top: 2px;
+    left: 1px;
+    border: #595f59 1px solid;
+    border-top-left-radius: 90px 50px;
+    background: linear-gradient(90deg, rgba(27, 44, 69, 1) 0%, rgba(212, 250, 250, 1) 100%);
+}
+
+.car__door--left::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    background-color: #0a0a0a;
+    border-radius: 10px 5px;
+    bottom: 40px;
+    left: 5px;
+}
+
+.car__door--right::before {
+    content: "";
+    position: absolute;
+    height: 46px;
+    width: 46px;
+    top: 2px;
+    right: 1px;
+    border: #595f59 1px solid;
+
+    border-top-right-radius: 90px 50px;
+    background: linear-gradient(90deg, rgba(27, 44, 69, 1) 0%, rgba(212, 250, 250, 1) 100%);
+}
+
+.car__door--right::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    background-color: #0a0a0a;
+    border-radius: 10px 5px;
+    bottom: 40px;
+    left: 5px;
+}
+
+.car__top--left {
+    width: 190px;
+    height: 50px;
+    border-top-left-radius: 150px 80px;
+    background-color: #131953;
+    position: relative;
+}
+
+/* Lights */
+.car__top--left::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    top: 20px;
+    left: 10px;
+    border-radius: 60%;
+    background-color: #ca0c0c;
+}
+
+.car:hover .car__top--left::after {
+
+    box-shadow: 0px 1px 55px 13px rgba(244, 100, 60, 0.75);
+    -webkit-box-shadow: 0px 1px 55px 13px rgba(250, 47, 84, 0.75);
+    -moz-box-shadow: 0px 1px 55px 13px rgba(244, 148, 191, 0.75);
+}
+
+.car__top--right {
+    width: 190px;
+    height: 35px;
+    border-top-right-radius: 160px 80px;
+    background-color: #131953;
+    position: absolute;
+    bottom: 50px;
+    left: 360px;
+    z-index: 10;
+}
+
+/* Front lights */
+.car__top--right::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 30px;
+
+    top: 9px;
+    right: 8px;
+
+    border-radius: 70%;
+    background-color: #7addf8;
+}
+
+.car:hover .car__top--right::after {
+    box-shadow: 0px 1px 55px 13px rgba(153, 252, 255, 0.75);
+    -webkit-box-shadow: 0px 1px 55px 13px rgba(154, 247, 239, 0.75);
+    -moz-box-shadow: 0px 1px 55px 13px rgba(148, 236, 244, 0.75);
+}
+
+.car__bottom--left {
+    width: 190px;
+    height: 50px;
+    border-bottom-left-radius: 160px 30px;
+    background-color: #131953;
+}
+
+.wheel {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: #595f59 5px dashed;
+    background-color: #020202;
+
+}
+
+.wheel::before {
+    content: "";
+    position: absolute;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #a3a3a3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.car__bottom--left .wheel {
+    left: 60px;
+}
+
+.car__bottom--right {
+    position: absolute;
+    width: 190px;
+    height: 50px;
+    border-bottom-right-radius: 90px 70px;
+    bottom: 0;
+    left: 360px;
+    background-color: #131953;
+}
+
+.car__bottom--right .wheel {
+    right: 60px;
+}
+
+/* Car animation */
+
+@keyframes wheel-rotate {
+    to {
+        rotate: 360deg;
+    }
+}
+
+@keyframes car-motion {
+    0% {
+        translate: -960px;
+    }
+
+    100% {
+        translate: 600px;
+    }
+
+}
+
+.wheel {
+    animation-name: wheel-rotate;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+
+.car {
+    animation-name: car-motion;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+
+/* Newton's pendulum */
+.pendulum {
+    padding-bottom: 200px;
+}
+
+.pendulum__body {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border-top: 7px rgb(157, 173, 175) solid;
+
+    transform: rotateY(20deg);
+
+    perspective: 300px;
+}
+
+.pendulum__body:hover .pendulum__item {
+    animation-play-state: paused;
+}
+
+.pendulum__item {
+    position: absolute;
+    top: -2px;
+
+    height: 100%;
+    width: 33.333%;
+    left: 33.333%;
+    transform-origin: top;
+
+}
+
+.pendulum__item::before {
+    content: "";
+    position: absolute;
+    background: #50555c;
+    background: linear-gradient(90deg, rgba(80, 85, 92, 1) 0%, rgba(228, 237, 231, 1) 50%, rgba(77, 122, 113, 1) 100%);
+    width: 5px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+}
+
+.pendulum__item::after {
+    content: "";
+    position: absolute;
+    background: radial-gradient(circle at top, rgb(50, 205, 50), black);
+    box-shadow: 10px 10px 41px 2px rgba(24, 32, 24, 0.72);
+    -webkit-box-shadow: 10px 10px 41px 2px rgba(24, 32, 24, 0.72);
+    -moz-box-shadow: 10px 10px 41px 2px rgba(24, 32, 24, 0.72);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+    bottom: 0;
+    left: 0;
+}
+
+.pendulum__item:nth-child(1):after {
+    bottom: -8%;
+    scale: 1.2;
+}
+
+.pendulum__item:nth-child(1) {
+    animation: front-item 1s infinite ease-in alternate;
+    z-index: 3;
+}
+
+.pendulum__item:nth-child(2):after {
+    z-index: 2;
+}
+
+.pendulum__item:nth-child(3)::after {
+    bottom: 8px;
+    scale: 0.8;
+}
+
+.pendulum__item:nth-child(3) {
+    animation: back-item 1s infinite ease-out alternate;
+    z-index: 1;
+}
+
+@keyframes front-item {
+
+    0% {
+        transform: rotateX(45deg);
+    }
+
+    50%,
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+@keyframes back-item {
+
+    0%,
+    50% {
+        transform: rotateX(0deg);
+    }
+
+    100% {
+        transform: rotateX(-45deg);
+    }
+}
