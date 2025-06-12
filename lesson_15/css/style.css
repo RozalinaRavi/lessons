@@ -406,9 +406,9 @@ h1 {
         font-size: 20px;
     }
 
-    .link-more::after {
+/*     .link-more::after {
         transform: translateY(70%);
-    }
+    } */
 
     .featured-products__card {
         flex: 0 0 calc(50% + 1px);
