@@ -96,6 +96,8 @@ h1 {
     .link-more:active {
         -webkit-tap-highlight-color: transparent;
     }
+    .link-more::before {
+        display: none;
 }
 
 @media (any-hover:hover) {
